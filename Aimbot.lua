@@ -299,9 +299,9 @@ end
 
 function Environment.Functions:ResetSettings()
     Environment.Settings = {
-        SaveSettings = true, -- Re-execute upon changing
-        ReloadOnTeleport = true,
-        Enabled = true,
+        SaveSettings = false, -- Re-execute upon changing
+        ReloadOnTeleport = false,
+        Enabled = false,
         TeamCheck = false,
         AliveCheck = true,
         WallCheck = false,
@@ -312,8 +312,8 @@ function Environment.Functions:ResetSettings()
     }
 
     Environment.FOVSettings = {
-        Enabled = true,
-        Visible = true,
+        Enabled = false,
+        Visible = false,
         Amount = 90,
         Color = "255, 255, 255",
         LockedColor = "255, 70, 70",
