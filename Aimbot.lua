@@ -33,7 +33,6 @@ local ServiceConnections = {RenderSteppedConnection = nil, InputBeganConnection 
 --// Script Settings
 
 Environment.Settings = {
-    SendNotifications = true,
     SaveSettings = true, -- Re-execute upon changing
     ReloadOnTeleport = true,
     Enabled = true,
@@ -85,16 +84,6 @@ local function GetColor(Color)
     local B = tonumber(string.match(Color, "[%d]+[%s]*,[%s]*[%d]+[%s]*,[%s]*([%d]+)"))
 
     return Color3.fromRGB(R, G, B)
-end
-
-local function SendNotification(TitleArg, DescriptionArg, DurationArg)
-    if Environment.Settings.SendNotifications then
-        StarterGui:SetCore("SendNotification", {
-            Title = TitleArg,
-            Text = DescriptionArg,
-            Duration = DurationArg
-        })
-    end
 end
 
 --// Functions
@@ -310,7 +299,6 @@ end
 
 function Environment.Functions:ResetSettings()
     Environment.Settings = {
-        SendNotifications = true,
         SaveSettings = true, -- Re-execute upon changing
         ReloadOnTeleport = true,
         Enabled = true,
