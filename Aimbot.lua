@@ -33,6 +33,7 @@ local ServiceConnections = {RenderSteppedConnection = nil, InputBeganConnection 
 --// Script Settings
 
 Environment.Settings = {
+    SendNotifications = false
     SaveSettings = false, -- Re-execute upon changing
     ReloadOnTeleport = false,
     Enabled = false,
