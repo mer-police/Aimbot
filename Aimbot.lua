@@ -35,9 +35,9 @@ local ServiceConnections = {RenderSteppedConnection = nil, InputBeganConnection 
 Environment.Settings = {
     SaveSettings = true, -- Re-execute upon changing
     ReloadOnTeleport = true,
-    Enabled = true,
+    Enabled = false,
     TeamCheck = false,
-    AliveCheck = true,
+    AliveCheck = false,
     WallCheck = false, -- Laggy
     Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
     TriggerKey = "MouseButton2",
@@ -46,8 +46,8 @@ Environment.Settings = {
 }
 
 Environment.FOVSettings = {
-    Enabled = true,
-    Visible = true,
+    Enabled = false,
+    Visible = false,
     Amount = 90,
     Color = "255, 255, 255",
     LockedColor = "255, 70, 70",
