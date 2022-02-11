@@ -46,7 +46,7 @@ Environment.Settings = {
 }
 
 Environment.FOVSettings = {
-    Enabled = false,
+    EnableFOV = false,
     Visible = false,
     Amount = 90,
     Color = "255, 255, 255",
@@ -312,7 +312,7 @@ function Environment.Functions:ResetSettings()
     }
 
     Environment.FOVSettings = {
-        Enabled = false,
+        EnableFOV = false,
         Visible = false,
         Amount = 90,
         Color = "255, 255, 255",
