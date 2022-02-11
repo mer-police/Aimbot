@@ -22,7 +22,7 @@ local Camera = game:GetService("Workspace").CurrentCamera
 --// Variables
 
 local LocalPlayer = Players.LocalPlayer
-local Title = "Exunys Developer"
+local Title = "Borb Aimbot CFG"
 local FileNames = {"Aimbot", "Configuration.json", "Drawing.json"}
 local RequiredDistance = math.huge
 local Typing = false
