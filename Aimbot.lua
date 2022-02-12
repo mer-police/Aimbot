@@ -27,7 +27,7 @@ fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportS
 
 dwUIS.InputBegan:Connect(function(i)
     if i.UserInputType == Enum.UserInputType.MouseButton2 then
-        settings.Aiming = true
+        settings.Aiming = false
     end
 end)
 
