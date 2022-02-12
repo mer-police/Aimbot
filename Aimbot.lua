@@ -7,7 +7,7 @@ local dwMouse = dwLocalPlayer:GetMouse()
 
 local settings = {
     Aimbot = false,
-    Aiming = true,
+    Aiming = false,
     Aimbot_AimPart = "Head",
     Aimbot_TeamCheck = true,
     Aimbot_Draw_FOV = false,
