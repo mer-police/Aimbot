@@ -1,10 +1,3 @@
-local dwCamera = workspace.CurrentCamera
-local dwRunService = game:GetService("RunService")
-local dwUIS = game:GetService("UserInputService")
-local dwEntities = game:GetService("Players")
-local dwLocalPlayer = dwEntities.LocalPlayer
-local dwMouse = dwLocalPlayer:GetMouse()
-
 local settings = {
     Aimbot = false,
     Aiming = false,
@@ -14,6 +7,13 @@ local settings = {
     Aimbot_FOV_Radius = 200,
     Aimbot_FOV_Color = Color3.fromRGB(255,255,255)
 }
+
+local dwCamera = workspace.CurrentCamera
+local dwRunService = game:GetService("RunService")
+local dwUIS = game:GetService("UserInputService")
+local dwEntities = game:GetService("Players")
+local dwLocalPlayer = dwEntities.LocalPlayer
+local dwMouse = dwLocalPlayer:GetMouse()
 
 local fovcircle = Drawing.new("Circle")
 fovcircle.Visible = settings.Aimbot_Draw_FOV
