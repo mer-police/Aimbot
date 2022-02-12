@@ -20,8 +20,6 @@ local Camera = game:GetService("Workspace").CurrentCamera
 --// Variables
 
 local LocalPlayer = Players.LocalPlayer
-local Title = "Exunys Developer"
-local FileNames = {"Aimbot", "Configuration.json", "Drawing.json"}
 local RequiredDistance = math.huge
 local Typing = false
 local Running = false
@@ -34,7 +32,7 @@ Environment.Settings = {
     SendNotifications = false,
     SaveSettings = false, -- Re-execute upon changing
     ReloadOnTeleport = false,
-    Enabled = false,
+    Enabled = true,
     TeamCheck = false,
     AliveCheck = true,
     WallCheck = false, -- Laggy
@@ -45,7 +43,7 @@ Environment.Settings = {
 }
 
 Environment.FOVSettings = {
-    Enabled = false,
+    Enabled = true,
     Visible = false,
     Amount = 90,
     Color = "255, 255, 255",
