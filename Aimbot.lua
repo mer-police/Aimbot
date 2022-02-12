@@ -47,7 +47,7 @@ Environment.Settings = {
 }
 
 Environment.FOVSettings = {
-    Enabled = true,
+    Enabled = false,
     Visible = false,
     Amount = 90,
     Color = "255, 255, 255",
