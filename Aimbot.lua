@@ -2,7 +2,7 @@ getgenv().Aimbot.Settings = {
     SendNotifications = true,
     SaveSettings = true, -- Re-execute upon changing
     ReloadOnTeleport = true,
-    Enabled = true,
+    Enabled = false,
     TeamCheck = false,
     AliveCheck = true,
     WallCheck = false, -- Laggy
@@ -13,8 +13,8 @@ getgenv().Aimbot.Settings = {
 }
 
 getgenv().Aimbot.FOVSettings = {
-    Enabled = true,
-    Visible = true,
+    Enabled = false,
+    Visible = false,
     Amount = 90,
     Color = "255, 255, 255",
     LockedColor = "255, 70, 70",
