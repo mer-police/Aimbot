@@ -1,3 +1,5 @@
+--// Preventing Multiple Processes
+
 pcall(function()
     getgenv().Aimbot.Functions:Exit()
 end)
@@ -20,6 +22,8 @@ local Camera = game:GetService("Workspace").CurrentCamera
 --// Variables
 
 local LocalPlayer = Players.LocalPlayer
+local Title = "PP Developer"
+local FileNames = {"Aimbot", "Configuration.json", "Drawing.json"}
 local RequiredDistance = math.huge
 local Typing = false
 local Running = false
@@ -29,10 +33,10 @@ local ServiceConnections = {RenderSteppedConnection = nil, InputBeganConnection 
 --// Script Settings
 
 Environment.Settings = {
-    SendNotifications = false,
-    SaveSettings = false, -- Re-execute upon changing
-    ReloadOnTeleport = false,
-    Enabled = true,
+    SendNotifications = true,
+    SaveSettings = true, -- Re-execute upon changing
+    ReloadOnTeleport = true,
+    Enabled = false,
     TeamCheck = false,
     AliveCheck = true,
     WallCheck = false, -- Laggy
@@ -346,8 +350,16 @@ if not Drawing or not writefile or not makefolder then
     SendNotification(Title, "Your exploit does not support this script", 3); return
 end
 
+--// Reload On Teleport
 
+if Environment.Settings.ReloadOnTeleport then
+    if syn.queue_on_teleport then
+        syn.queue_on_teleport(game:HttpGet("https://pastebin.com/raw/n8wG8BZq"))
+    else
+        SendNotification(Title, "Your exploit does not support \"syn.queue_on_teleport()\"")
+    end
+end
 
 --// Load
 
-Load(); SendNotification()
+Load(); SendNotification(Title, "Aimbot script successfully loaded! Check the GitHub page on how to configure the script.", 5)
